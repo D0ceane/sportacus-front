@@ -1,27 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
+import GetPlaceApi from "./components/GetPlaceApi";
 
 function App() {
   return (
-
-    <div className="App">
-        <Navbar></Navbar>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Sportacus <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="container">
+          <Navbar/>
+          <div className="listPlaceApi"></div>
+          <GetPlaceApi/>
+          <div className="viewMap"></div>
+          <div className="navBar"></div>
+      </div>
   );
 }
 
