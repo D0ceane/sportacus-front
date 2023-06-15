@@ -1,0 +1,53 @@
+.placeApi {
+    border: aqua solid 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 100%;
+}
+
+.infosPlaceApi {
+    border: yellow solid 2px;
+    width: 25%;
+}
+
+.map {
+    border: purple solid 2px;
+    width: 70%;
+    height: 80%;
+}
+
+.infosPlaceApi li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.clickable-block {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.clickable-block:hover {
+    border-color: #888;
+}
+
+.place-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.place-name {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
