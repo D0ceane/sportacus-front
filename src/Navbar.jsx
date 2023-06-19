@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import {createTheme, ThemeProvider} from "@mui/material";
+import {createTheme} from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const theme = createTheme({
@@ -27,7 +27,8 @@ const theme = createTheme({
                 'Arial',
             ],
             fontSize: 50,
-            color: '#5d3c2b'
+            color: '#5d3c2b',
+            fontWeight: 600,
         },
         navbar:{
             fontStyle: "none"
@@ -118,7 +119,7 @@ function ResponsiveAppBar() {
                                     color: theme.typography.h1,
                                 }}
                             >
-                                Sportacus
+                                SPORTACUS
                             </Typography>
 
                         {pages.slice(2).map((page, index) => (
