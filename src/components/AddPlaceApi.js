@@ -4,7 +4,7 @@ import DOMPurify from 'dompurify';
 import {Modal} from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import './addPlaceApiStyles.css';
+import '../assets/style/addPlaceApiStyles.css';
 
 export default function AddPlaceApi({ postData, isLoading, error }) {
     const [installationName, setInstallationName] = useState('');
