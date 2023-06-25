@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import Layout from "../../components/Layout";
 import Home from "./Home";
-import SignUp from "../../components/SignIn";
+import SignUp from "../Auth/Login";
 import AddPlaceApi from "../../components/AddPlaceApi";
 import Error from "../../_utils/Error";
 
