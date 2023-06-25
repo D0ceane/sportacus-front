@@ -12,6 +12,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import {createTheme} from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Link from '@mui/material/Link';
 
 const theme = createTheme({
     custom:{
@@ -35,9 +36,6 @@ const theme = createTheme({
         }
     }
 })
-const pages = ['Créer une party', 'Rejoindre une party', 'Ajouter un lieu', 'Modifier un lieu'];
-const settings = ['Profil', 'Déconnexion'];
-
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -93,20 +91,28 @@ function ResponsiveAppBar() {
                     >
                         Sportacus
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, paddingLeft:'5rem' }}>
-                        {pages.slice(0,2).map((page, index) => (
-                            <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, paddingLeft:'3rem' }}>
+                            <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
                                     sx={{
                                     color:theme.typography.h1.color
 
                                 }}
-
                                     textAlign="center">
-                                    {page}
+                                    Créer une Party
                                 </Typography>
                             </MenuItem>
-                        ))}
+                        <MenuItem onClick={handleCloseNavMenu}>
+                                <Typography
+                                    sx={{
+                                    color:theme.typography.h1.color
+
+                                }}
+                                    textAlign="center">
+                                    Rejoindre une Party
+                                </Typography>
+                            </MenuItem>
+
 
                             <Typography
                                 textAlign="center"
@@ -119,20 +125,31 @@ function ResponsiveAppBar() {
                                     color: theme.typography.h1,
                                 }}
                             >
-                                SPORTACUS
+                                <Link href="accueil" underline="none" color={theme.typography.h1}>
+                                    {'SPORTACUS'}
+                                </Link>
                             </Typography>
 
-                        {pages.slice(2).map((page, index) => (
-                            <MenuItem key={page} onClick={handleCloseNavMenu}>
+                            <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
                                 sx={{
                                     color:theme.typography.h1.color
                                 }}
                                 >
-                                    {page}
+                                    <Link href="ajouter-lieu" underline="none" color={theme.typography.h1.color} >
+                                        {'Ajouter un lieu'}
+                                    </Link>
                                 </Typography>
                             </MenuItem>
-                        ))}
+                            <MenuItem onClick={handleCloseNavMenu}>
+                                <Typography
+                                sx={{
+                                    color:theme.typography.h1.color
+                                }}
+                                >
+                                    Modifier un lieu
+                                </Typography>
+                            </MenuItem>
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
@@ -159,11 +176,21 @@ function ResponsiveAppBar() {
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
+
+                            <MenuItem onClick={handleCloseUserMenu}>
+                                <Typography textAlign="center">
+                                    <Link href="profil" underline="none" color={theme.typography.h1.color} >
+                                    {'Profil'}
+                                </Link></Typography>
+                            </MenuItem>
+                            <MenuItem onClick={handleCloseUserMenu}>
+                                    <Typography textAlign="center">
+                                        <Link href="connexion" underline="none" color={theme.typography.h1.color} >
+                                            {'Connexion'}
+                                        </Link>
+                                    </Typography>
                                 </MenuItem>
-                            ))}
+
                         </Menu>
                     </Box>
                 </Toolbar>
@@ -171,5 +198,4 @@ function ResponsiveAppBar() {
         </AppBar>
     );
 }
-
 export default ResponsiveAppBar;

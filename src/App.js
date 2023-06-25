@@ -1,15 +1,24 @@
 import './App.css';
-import Navbar from './Navbar';
-import GetPlaceApi from "./components/GetPlaceApi";
+import Navbar from './components/Navbar';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import SignUp from './pages/SignIn'
+import Error from "./_utils/Error";
+import Home from "./pages/Home";
+import AddPlaceApi from "./components/AddPlaceApi";
 
 function App() {
   return (
       <div className="container">
           <Navbar/>
-          <div className="listPlaceApi"></div>
-          <GetPlaceApi/>
-          <div className="viewMap"></div>
-          <div className="navBar"></div>
+          <BrowserRouter>
+              <Routes>
+                  <Route index element={<Home/>}/>
+                  <Route path="/connexion" element={<SignUp/>}/>
+                  <Route path="/accueil" element={<Home/>}/>
+                  <Route path="/ajouter-lieu" element={<AddPlaceApi/>}/>
+                  <Route path="*" element={<Error/>}/>
+              </Routes>
+          </BrowserRouter>
       </div>
   );
 }

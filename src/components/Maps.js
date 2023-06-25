@@ -4,17 +4,17 @@ import { Icon, divIcon } from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import { point } from 'leaflet/src/geometry';
 import React, { useEffect, useState } from 'react';
-import './mapsStyles.css';
+import '../assets/style/mapsStyles.css';
 import Geolocation from "./Geolocation";
 
 export default function Maps({ placeApis }) {
     const customIcon = new Icon({
-        iconUrl: require('../icon/marker.png'),
+        iconUrl: require('../assets/icon/marker.png'),
         iconSize: [38, 50],
     });
 
     const customIconLocated = new Icon({
-        iconUrl: require('../icon/user.png'),
+        iconUrl: require('../assets/icon/user.png'),
         iconSize: [38, 50],
     });
 

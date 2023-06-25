@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Home from "./Home";
+import MapPlaces from "./MapPlaces";
 
 export default function GetPlaceApi(){
     const [data, setData] = useState([]);
@@ -25,7 +25,7 @@ export default function GetPlaceApi(){
 
     return (
         <div>
-            <Home placeApis={data} isLoading={isLoading} error={error} />
+            <MapPlaces placeApis={data} isLoading={isLoading} error={error} />
         </div>
     );
 };
