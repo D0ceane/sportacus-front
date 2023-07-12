@@ -1,0 +1,19 @@
+#admin{
+    display: flex;
+}
+
+.SideMenu{
+    flex-grow: 1;
+    border-right: solid 1px grey;
+}
+#admin_body{
+    flex-grow: 6;
+    padding-left: 2rem;
+}
+.AdminHeader{
+    text-align: center;
+    padding: 20px ;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}

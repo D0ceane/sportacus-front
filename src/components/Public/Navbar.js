@@ -125,7 +125,7 @@ function ResponsiveAppBar() {
                                     color: theme.typography.h1,
                                 }}
                             >
-                                <Link href="accueil" underline="none" color={theme.typography.h1}>
+                                <Link to="accueil"  underline="none" color={theme.typography.h1}>
                                     {'SPORTACUS'}
                                 </Link>
                             </Typography>
@@ -136,7 +136,7 @@ function ResponsiveAppBar() {
                                     color:theme.typography.h1.color
                                 }}
                                 >
-                                    <Link href="ajouter-lieu" underline="none" color={theme.typography.h1.color} >
+                                    <Link to="ajouter-lieu" underline="none" color={theme.typography.h1.color} >
                                         {'Ajouter un lieu'}
                                     </Link>
                                 </Typography>
@@ -179,13 +179,13 @@ function ResponsiveAppBar() {
 
                             <MenuItem onClick={handleCloseUserMenu}>
                                 <Typography textAlign="center">
-                                    <Link href="profil" underline="none" color={theme.typography.h1.color} >
+                                    <Link to="profil" underline="none" color={theme.typography.h1.color} >
                                     {'Profil'}
                                 </Link></Typography>
                             </MenuItem>
                             <MenuItem onClick={handleCloseUserMenu}>
                                     <Typography textAlign="center">
-                                        <Link href="connexion" underline="none" color={theme.typography.h1.color} >
+                                        <Link to="connexion" underline="none" color={theme.typography.h1.color} >
                                             {'Connexion'}
                                         </Link>
                                     </Typography>
