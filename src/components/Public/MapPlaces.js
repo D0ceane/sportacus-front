@@ -1,8 +1,8 @@
-import '../assets/style/placeApiStyles.css';
+import '../../assets/style/placeApiStyles.css';
 import {Grid} from "@mui/material";
 import Maps from "./Maps";
 import React from "react";
-import tartanTrack from "../assets/icon/tartanTrack.jpg";
+import tartanTrack from "../../assets/icon/tartanTrack.jpg";
 
 export default function MapPlaces({placeApis, isLoading, error}){
     if (isLoading) {

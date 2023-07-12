@@ -4,7 +4,7 @@ import {Layout, Home} from '../Public'
 import Error from "../../_utils/Error";
 
 import SignUp from "../Auth/Login";
-import AddPlaceApi from "../../components/AddPlaceApi";
+import AddPlaceApi from "../../components/Public/AddPlaceApi";
 
 const PublicRouter = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import GetPlaceApi from "../../components/GetPlaceApi";
+import GetPlaceApi from "../../components/Public/GetPlaceApi";
 
 const Home = () => {
     return (

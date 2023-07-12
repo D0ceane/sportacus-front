@@ -7,16 +7,19 @@ const SideMenu = () => {
 Side Menu Operations
             <ul>
                 <li>
-                    <Link to="/"> Accueil</Link>
+                    <Link to="/"> Accueil </Link>
                 </li>
                 <li>
-                    <Link to="/admin/user/add"> Add User </Link>
+                    <Link to="/admin/user/list"> Liste des utilisateurs </Link>
                 </li>
                 <li>
-                    <Link to="/admin/user/edit"> Edit User </Link>
+                    <Link to="/admin/user/add"> Ajouter un utilisateur </Link>
                 </li>
                 <li>
-                    <Link to="/admin/user/delete"> Delete User </Link>
+                    <Link to="/admin/user/edit"> Modifier un utilisateur </Link>
+                </li>
+                <li>
+                    <Link to="/admin/user/delete"> Supprimer un utilisateur </Link>
                 </li>
             </ul>
         </div>
