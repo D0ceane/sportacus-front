@@ -5,6 +5,7 @@ import Error from "../../_utils/Error";
 
 import SignUp from "../Auth/Login";
 import AddPlaceApi from "../../components/Public/AddPlaceApi";
+import Login from "../Auth/Login";
 
 const PublicRouter = () => {
     return (
@@ -13,7 +14,6 @@ const PublicRouter = () => {
                 <Route element={<Layout/>}>
                     <Route index element={<Home/>}/>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/connexion" element={<SignUp/>}/>
                     <Route path="/ajouter-lieu" element={<AddPlaceApi/>}/>
                     <Route path="*" element={<Error/>}/>
                 </Route>
