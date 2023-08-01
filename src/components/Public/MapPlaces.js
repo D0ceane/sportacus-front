@@ -30,15 +30,14 @@ export default function MapPlaces({placeApis, isLoading, error}){
                                 className="place-image"
                             />
                         </Grid>
-                        <Grid item sx={{margin: 1}}>
+                        <Grid item sx={{marginTop: 1}}>
                             <span className="place-name">
                                 Nom de l'installation : {placeApi.installationName}
                             </span>
-                            <br/>
                             <span className="place-name">
                                 {placeApi.equipmentFamily}
                             </span>
-                            <br/>
+
                             <span className="place-name">
                                 {placeApi.accessibleInstallationToPeopleWithDisabilities === "0"
                                     ? "Non accessible aux personnes handicapées"

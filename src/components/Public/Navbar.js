@@ -89,7 +89,9 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        Sportacus
+                        <Link href="/"  underline="none" color={theme.typography.h1}>
+                            {'SPORTACUS'}
+                        </Link>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, paddingLeft:'3rem' }}>
                             <MenuItem onClick={handleCloseNavMenu}>
@@ -125,7 +127,7 @@ function ResponsiveAppBar() {
                                     color: theme.typography.h1,
                                 }}
                             >
-                                <Link to="accueil"  underline="none" color={theme.typography.h1}>
+                                <Link href="/"  underline="none" color={theme.typography.h1}>
                                     {'SPORTACUS'}
                                 </Link>
                             </Typography>
@@ -136,7 +138,7 @@ function ResponsiveAppBar() {
                                     color:theme.typography.h1.color
                                 }}
                                 >
-                                    <Link to="ajouter-lieu" underline="none" color={theme.typography.h1.color} >
+                                    <Link href="ajouter-lieu" underline="none" color={theme.typography.h1.color} >
                                         {'Ajouter un lieu'}
                                     </Link>
                                 </Typography>
@@ -179,18 +181,18 @@ function ResponsiveAppBar() {
 
                             <MenuItem onClick={handleCloseUserMenu}>
                                 <Typography textAlign="center">
-                                    <Link to="profil" underline="none" color={theme.typography.h1.color} >
+                                    <Link href="profil" underline="none" color={theme.typography.h1.color} >
                                     {'Profil'}
-                                </Link></Typography>
+                                </Link>
+                                </Typography>
                             </MenuItem>
                             <MenuItem onClick={handleCloseUserMenu}>
                                     <Typography textAlign="center">
-                                        <Link to="connexion" underline="none" color={theme.typography.h1.color} >
+                                        <Link href="/auth/login" underline="none" color={theme.typography.h1.color} >
                                             {'Connexion'}
                                         </Link>
                                     </Typography>
                                 </MenuItem>
-
                         </Menu>
                     </Box>
                 </Toolbar>

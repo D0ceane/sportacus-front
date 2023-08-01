@@ -6,6 +6,18 @@
     flex-grow: 1;
     border-right: solid 1px grey;
 }
+.SideMenu ul {
+    list-style: none inside none;
+    text-decoration: none;
+}
+.SideMenu ul li {
+    list-style: none inside none;
+    text-decoration: none;
+}
+.SideMenu a {
+    text-decoration: none;
+    color: black;
+}
 #admin_body{
     flex-grow: 6;
     padding-left: 2rem;
