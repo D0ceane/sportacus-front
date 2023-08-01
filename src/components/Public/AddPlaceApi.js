@@ -127,7 +127,7 @@ export default function AddPlaceApi({ postData, isLoading, error }) {
                     onChange={(e) => setEquipmentFamily(e.target.value)}
                 />
             </div>
-            <button onClick={handlePost}>Envoyer la demande</button>
+            <button className="sendDemand" onClick={handlePost}>Envoyer la demande</button>
             {open && (
                 <Modal
                     open={open}

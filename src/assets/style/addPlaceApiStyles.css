@@ -21,7 +21,7 @@ input[type="text"] {
     border-radius: 4px;
 }
 
-button {
+.sendDemand {
     padding: 10px 20px;
     background-color: #ffbd59;
     color: white;
