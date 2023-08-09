@@ -3,6 +3,7 @@ import {Grid} from "@mui/material";
 import Maps from "./Maps";
 import React from "react";
 import tartanTrack from "../../assets/icon/tartanTrack.jpg";
+import { Accessible, NotAccessible } from '@mui/icons-material';
 
 export default function MapPlaces({placeApis, isLoading, error}){
     if (isLoading) {
@@ -38,11 +39,11 @@ export default function MapPlaces({placeApis, isLoading, error}){
                                 {placeApi.equipmentFamily}
                             </span>
 
-                            <span className="place-name">
+                            <span className="place-accessibility">
                                 {placeApi.accessibleInstallationToPeopleWithDisabilities === "0"
-                                    ? "Non accessible aux personnes handicapées"
+                                    ? <NotAccessible/>
                                     : placeApi.accessibleInstallationToPeopleWithDisabilities === "1"
-                                    ? "Accessible aux personnes handicapées"
+                                    ? <Accessible/>
                                     : "Non renseigné"}
                             </span>
                         </Grid>
