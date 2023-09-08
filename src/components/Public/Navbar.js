@@ -138,7 +138,7 @@ function ResponsiveAppBar() {
                                     color:theme.typography.h1.color
                                 }}
                                 >
-                                    <Link href="ajouter-lieu" underline="none" color={theme.typography.h1.color} >
+                                    <Link href="/ajouter-lieu" underline="none" color={theme.typography.h1.color} >
                                         {'Ajouter un lieu'}
                                     </Link>
                                 </Typography>
