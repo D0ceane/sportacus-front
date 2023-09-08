@@ -50,7 +50,7 @@ export default function Maps({ placeApis }) {
                 position={userPosition}
                 icon={customIconLocated}
             >
-                <Popup>{"You are here!"}</Popup>
+                <Popup>{"Vous êtes ici"}</Popup>
             </Marker>
         );
     }
